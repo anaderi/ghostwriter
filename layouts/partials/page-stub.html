@@ -4,8 +4,8 @@
         {{ if .Description }}
             <p class="post-stub-description">{{ .Description }}</p>
         {{ end }}
-        {{ with .Params.featured }}
-            <span class="post-stub-tag">Featured</span>
+        {{ with .Params.tags }}
+            <span class="post-stub-tag"> {{ . }} </span>
         {{ end }}
     </a>
 </li>
